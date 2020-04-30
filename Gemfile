@@ -17,7 +17,7 @@ group :release do
 end
 
 group :test do
-  gem 'coveralls', :require => false
+  gem 'coveralls', '>= 0.8.14', :require => false
   gem 'minitest', '5.4.1'
   gem 'minitest-reporters'
   gem 'mocha', '1.1.0', :require => false
