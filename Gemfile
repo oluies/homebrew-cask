@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rake'
+gem 'rake', '>= 12.3.3'
 
 group :debug do
   gem 'pry'
@@ -8,8 +8,8 @@ group :debug do
 end
 
 group :development do
-  gem 'rubocop', '~> 0.37.0'
-  gem 'rubocop-cask', '~> 0.5.0'
+  gem 'rubocop', '~> 0.49.0'
+  gem 'rubocop-cask', '~> 0.13.0'
 end
 
 group :release do
@@ -17,7 +17,7 @@ group :release do
 end
 
 group :test do
-  gem 'coveralls', :require => false
+  gem 'coveralls', '>= 0.8.14', :require => false
   gem 'minitest', '5.4.1'
   gem 'minitest-reporters'
   gem 'mocha', '1.1.0', :require => false
